@@ -9,7 +9,10 @@ public class Enseignant extends Utilisateur {
     /**
      * Default constructor
      */
-    public Enseignant() {
+    public Enseignant(String prenom, String nom, String adrpostale, String adrmail, int numem, int harpege) {
+        super(prenom, nom, adrpostale, adrmail);
+        this.numem = numem;
+        this.harpege = harpege;
     }
 
     /**
@@ -34,46 +37,23 @@ public class Enseignant extends Utilisateur {
     /**
      * @return
      */
-    public Devoir create() {
-        // TODO implement here
-        return null;
+    public Devoir create(String nom, String desc, Date deadline, int nbrPoints) {
+        return new Devoir(nom, desc, deadline, nbrPoints);
     }
 
-    /**
-     * @return
-     */
-    public Devoir consulter() {
-        // TODO implement here
-        return null;
+
+    public void attribuer(Rendu rendu, int note) {
+        rendu.setNote(note);
     }
 
-    /**
-     * @param Devoir
-     */
-    public void attribuer(void Devoir) {
-        // TODO implement here
+
+    public void donnerAvis(Rendu rendu, String avis) {
+        rendu.setNote(avis);
     }
 
-    /**
-     * @param Rendu
-     */
-    public void donnerAvis(void Rendu) {
-        // TODO implement here
-    }
-
-    /**
-     * @return
-     */
     public Note consulter() {
         // TODO implement here
         return null;
-    }
-
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
     }
 
 }

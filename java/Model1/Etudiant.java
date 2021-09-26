@@ -9,7 +9,9 @@ public class Etudiant extends Utilisateur {
     /**
      * Default constructor
      */
-    public Etudiant() {
+    public Etudiant(String prenom, String nom, String adrpostale, String adrmail, String numINE) {
+        super(prenom, nom, adrpostale, adrmail);
+        this.numINE = numINE;
     }
 
     /**

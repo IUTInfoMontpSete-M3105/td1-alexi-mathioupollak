@@ -9,8 +9,13 @@ public class Utilisateur {
     /**
      * Default constructor
      */
-    public Utilisateur() {
+    public Utilisateur(String prenom, String nom, String adrpost, String adrmail) {
+        this.prenom = prenom;
+        this.nom = nom;
+        this.adrpost = adrpost;
+        this.adrmail = adrmail;
     }
+
 
     /**
      * 
@@ -38,24 +43,22 @@ public class Utilisateur {
     /**
      * @return
      */
-    public Note consulterNotes() {
-        // TODO implement here
-        return null;
+    public Note consulterNotes(Rendu r) {
+        r.getNote();
     }
 
     /**
      * @return
      */
-    public Devoir consulterDevoirs() {
+    public void consulterDevoirs(Devoir devoir) {
         // TODO implement here
-        return null;
+        return;
     }
 
     /**
      * @return
      */
     public Cours consulterCours() {
-        // TODO implement here
         return null;
     }
 
@@ -63,7 +66,6 @@ public class Utilisateur {
      * @return
      */
     public int afficherPoints() {
-        // TODO implement here
         return 0;
     }
 

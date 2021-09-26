@@ -9,9 +9,12 @@ public class Devoir {
     /**
      * Default constructor
      */
-    public Devoir() {
+    public Devoir(String nom, String desc, Date deadline, int nbrPoints) {
+        this.nom = nom;
+        this.desc = desc;
+        this.deadline = deadline;
+        this.nbrPoints = nbrPoints;
     }
-
     /**
      * 
      */
@@ -33,22 +36,9 @@ public class Devoir {
     public int nbrPoints;
 
 
-
-
-
-
-
-
-
-
-
-
-    /**
-     * @return
-     */
     public Points afficherPoints() {
         // TODO implement here
-        return null;
+        return nbrPoints;
     }
 
 }
